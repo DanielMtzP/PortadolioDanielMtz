@@ -18,6 +18,11 @@ body {
     background-color: #03051c;
 }
 
+header{
+    height: 100vh;
+    width: 100vw;
+}
+
 .nav{
     background-color:#03051c;
     color: #FFFFFF;
@@ -50,46 +55,72 @@ li:active{
 ul li{
     list-style-type: none;
     padding: 20px;
+    font-size: 20px;
     }
 
 .section-header{
-    padding: 2rem 3rem;
-}
+    width: 100vw;
+    height: 100vh;
+    padding: 5rem 3rem;
+    position: relative;
+    }   
 
-.section-header > div h1{
+.conjunto-1{
+    position: absolute;
+    left: 125px;
+    }
+
+.section-header > .conjunto-1 h1{
     color: #FFFFFF;
     border-bottom: solid white 4px;
-    width: 15rem;
+    width: 25rem;
     font-family: 'Montserrat', sans-serif;
     padding: 5px;
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 300;
     }
 
-.section-header > div h2{
-     font-size: 6rem;
+.section-header > .conjunto-1 h2{
+     font-size: 10rem;
      color: var(--color-titulos);
      font-family: 'Montserrat', sans-serif;
      width: 60rem;
+
      }
-.section-header > div h3{
-    display: inline-block;
+.section-header > .conjunto-1 h3{
     color: var(--color-blanco);
     font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 100;
-    width: 500px;
+    width: 50rem;
 }
 .fondo{
-    display: flex;
     background-color: var(--color-secundario);
     border-style: solid var(--color-secundario);
-    height: 35rem;
-    width: 35rem;
+    height: 55rem;
+    width: 55rem;
     border-radius: 50%;
-    position: relative;
-    top:-280px;
-    left: 23vw;
+    position: absolute;
+    top: 10px;
+    left: 30vw;
     z-index: -1;
 
+}
+
+.conjunto-2{
+    text-align:left;
+    margin-right: 1rem;
+}
+
+.section-header > .conjunto-2 h1{
+    font-size: 4rem;
+    color: var(--color-titulos);
+    font-family: 'Montserrat', sans-serif;
+    width: 60rem;
+}
+.section-header > .conjunto-2 h2{
+    font-size: 4rem;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    width: 60rem;
 }
