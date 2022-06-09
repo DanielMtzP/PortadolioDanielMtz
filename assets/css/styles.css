@@ -203,7 +203,7 @@ input#menu-hamburguesa:checked ~ ul{
     .section-header > .conjunto-2 div{
         margin-top: 5px;
         justify-content: center;
-        gap: 4px;
+        gap: 8px;
     }
     
     .section-header > .conjunto-2 > div .imagen{
