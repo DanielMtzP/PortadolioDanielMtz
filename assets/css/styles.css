@@ -216,6 +216,7 @@ input#menu-hamburguesa:checked ~ ul{
     margin-top: 15px;
     box-sizing:content-box;
     width: auto;
+    justify-content: center;
 }
 
 .servicios > .tipos-servicios > div{
@@ -320,6 +321,7 @@ progress::-moz-progress-bar {
     display: flex;
     padding: 0rem 2rem;
     gap: 1.5rem;
+    justify-content: center;
 }
 
 .portafolio > div img{
@@ -340,14 +342,18 @@ progress::-moz-progress-bar {
 .contacto > .iconos{
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 2rem;
     gap: 2rem;
+    width: auto;
 }
 
 .contacto > .iconos > .email{
     margin-left: 117px;
 }
-
+.contacto > .iconos > .celular{
+    margin-right: 117px;
+}
 
 .contacto > .iconos> a img{
     height: 60px;
