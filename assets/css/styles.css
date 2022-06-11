@@ -317,7 +317,7 @@ progress::-moz-progress-bar {
 }
 
 .portafolio > div{
-    overflow: scroll;
+    overflow:scroll;
     display: flex;
     padding: 0rem 2rem;
     gap: 1.5rem;
