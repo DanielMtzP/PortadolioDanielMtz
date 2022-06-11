@@ -349,12 +349,12 @@ progress::-moz-progress-bar {
 }
 
 
-.contacto > .iconos> div img{
+.contacto > .iconos> a img{
     height: 60px;
     width: 60px;
 }
 
-.contacto > .iconos > div{
+.contacto > .iconos > a{
     display: flex;
     background-color: var(--color-blanco);
     width: 140px;
@@ -365,22 +365,26 @@ progress::-moz-progress-bar {
     background-image: url(../images/Ellipse\ 14.svg);
     background-repeat: no-repeat;
     background-size:contain;
-    
+    text-decoration: none;
 }
- .contacto > .iconos > div > .imagen{
+ .contacto > .iconos > a > .imagen{
     padding-top: 20px;
  }
- .contacto > .iconos > div > .texto-1{
+ .contacto > .iconos > a > .texto-1{
      color: black;
      font-size: .8rem;
      font-weight: 900;
  }
- .contacto > .iconos > div > .texto-2{
+ .contacto > .iconos > a > .texto-2{
     color: var(--color-gris); 
     font-size: .6rem;
     padding-top: 8px;
  }
-
+ .contacto > .iconos > .email a{
+     display: block;
+     height: 140px;
+     width: 140px;
+ }
 
 
 
