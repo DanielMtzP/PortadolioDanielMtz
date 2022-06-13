@@ -586,6 +586,13 @@ progress::-moz-progress-bar {
         width: auto;
         justify-content:center;
     }
+
+    .contacto > .iconos > .email{
+        margin-left: 217px;
+    }
+    .contacto > .iconos > .celular{
+        margin-right: 217px;
+    }
 }
 
 @media screen and ( min-width: 768px ) {
@@ -712,6 +719,13 @@ progress::-moz-progress-bar {
         padding: 2rem 1rem;
         margin-right: 20%;
         margin-left: 20%;
+    }
+
+    .contacto > .iconos > .email{
+        margin-left: 280px;
+    }
+    .contacto > .iconos > .celular{
+        margin-right: 280px;
     }
 }
 
