@@ -23,7 +23,7 @@ body{
 header{
     background-color: var(--color-principal);
     position: relative;
-    height: 100%;
+    height: 110vh;
 }
 
 nav{
@@ -32,6 +32,7 @@ nav{
     align-items: center;
     padding: 0.5rem 1.25rem;
     height: 60px;
+    
 }
 
 input#menu-hamburguesa{
@@ -216,7 +217,7 @@ input#menu-hamburguesa:checked ~ ul{
     margin-top: 15px;
     box-sizing:content-box;
     width: auto;
-    justify-content: center;
+    justify-content:flex-start;
 }
 
 .servicios > .tipos-servicios > div{
@@ -321,7 +322,7 @@ progress::-moz-progress-bar {
     display: flex;
     padding: 0rem 2rem;
     gap: 1.5rem;
-    justify-content: center;
+    justify-content:flex-start;
 }
 
 .portafolio > div img{
@@ -563,9 +564,157 @@ progress::-moz-progress-bar {
         height: 34px;
         width: 34px;
     }
+
+    .servicios > .tipos-servicios{
+        display: flex;
+        gap: 4%;
+        padding: 20px;
+        margin-top: 15px;
+        box-sizing:content-box;
+        width: auto;
+        justify-content:center;
+    }
 }
 
 @media screen and ( min-width: 768px ) {
+    nav label{
+        display: none;
+        
+    }
+
+    input#menu-hamburguesa ~ ul{
+        position: static;
+        background-color: transparent;
+        display:flex;
+        flex-direction: row;
+        height: auto;
+        justify-content: flex-end;
+    }
+
+    
+    
+    nav{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        padding: 0.5rem 1.25rem;
+        height: 60px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 4;
+        background-color: var(--color-principal);
+        width: 100%;
+    }
+    
+    header ul a:hover{
+        color:var(--color-titulos);
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    li:active{
+        color:var(--color-titulos);
+        text-decoration: none;
+    }
+    
+    .section-header > .conjunto-1{
+        position: absolute;
+        left: 6%;
+        z-index: 1;
+        top: 0;
+        margin-top:0;
+    }
+    
+    .section-header > .conjunto-2{
+        position: absolute;
+        right: 5%;
+        top: 0;
+        margin-top: 0;
+        
+    }
+    
+    .fondo{
+        border-style:solid ;
+        border-color: var(--color-secundario);
+        border-radius: 50%;
+        position: absolute;
+        background-color: var(--color-secundario);
+        width: 60vw;
+        height: 60vw;
+        max-width: 480px;
+        max-height: 480px;
+        z-index: 0;
+        top: 1rem;
+
+    }
+
+    .section-header > .conjunto-3 {
+        top: 290px;
+        gap: 60px;
+        max-width: 600px;
+
+    }
+
+    .section-header > .conjunto-1 h1{
+        font-weight: 100;
+        font-size: 4rem;
+        border-bottom: solid white 2px;
+        width: 230px;
+    }
+    
+    .section-header > .conjunto-1 h2{
+        font-size: 4.5rem;
+        border-bottom: transparent 2px;
+        font-weight:900;
+    }
+    
+    .section-header > .conjunto-1 h3{
+        font-weight: 100;
+        font-size: 1.8rem;
+        width: 350px;
+        margin-top: 0;
+    }
+
+    .section-header > .conjunto-2{
+        width: 240px;
+    }
+
+    .section-header > .conjunto-2 h1{
+        font-size:2.8rem;
+    }
+    
+    .section-header > .conjunto-2 h2{
+        font-size: 2.8rem;
+    }
+    
+    .section-header > .conjunto-2 div{
+        gap: 45px;
+        justify-content: flex-start;
+    }
+    .section-header > .conjunto-2 > div img{
+        height: 34px;
+        width: 34px;
+    }
+
+    .acerca-de-mi > p{
+        padding: 20px;
+        margin-top: 15px;
+        text-align: center;
+        font-weight: 100;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .habilidades{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 1rem;
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+}
+
+@media screen and ( min-width: 1000px ) {
     nav label{
         display: none;
     }
@@ -573,9 +722,228 @@ progress::-moz-progress-bar {
     input#menu-hamburguesa ~ ul{
         position: static;
         background-color: transparent;
-        display: flex;
+        display:flex;
         flex-direction: row;
         height: auto;
         justify-content: flex-end;
+    }
+
+    header ul a:hover{
+        color: rgb(128, 128, 128);
+        text-decoration: underline whitesmoke 1px;
+        cursor: pointer;
+    }
+    li:active{
+        color:#34B0BE;
+        text-decoration: underline rgb(20, 92, 92) 3px;
+    }
+    
+    nav{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        padding: 0.5rem 1.25rem;
+        height: 60px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 4;
+        background-color: var(--color-principal);
+        width: 100%;
+    }
+
+    .section-header > .conjunto-1{
+        position: absolute;
+        left: 6%;
+        z-index: 1;
+        top: 0;
+        margin-top:0;
+    }
+    
+    .section-header > .conjunto-2{
+        position: absolute;
+        right: 5%;
+        top: 0;
+        margin-top: 0;
+        
+    }
+    
+    .fondo{
+        border-style:solid ;
+        border-color: var(--color-secundario);
+        border-radius: 50%;
+        position: absolute;
+        background-color: var(--color-secundario);
+        width: 60vw;
+        height: 60vw;
+        max-width: 480px;
+        max-height: 480px;
+        z-index: 0;
+        top: 1rem;
+
+    }
+
+    .section-header > .conjunto-3 {
+        top: 290px;
+        gap: 60px;
+        max-width: 600px;
+
+    }
+
+    .section-header > .conjunto-1 h1{
+        font-weight: 100;
+        font-size: 6rem;
+        border-bottom: solid white 2px;
+        width: 330px;
+    }
+    
+    .section-header > .conjunto-1 h2{
+        font-size: 6.5rem;
+        border-bottom: transparent 2px;
+        font-weight:900;
+    }
+    
+    .section-header > .conjunto-1 h3{
+        font-weight: 100;
+        font-size: 2.4rem;
+        width: 350px;
+        margin-top: 0;
+    }
+
+    .section-header > .conjunto-2{
+        width: 340px;
+    }
+
+    .section-header > .conjunto-2 h1{
+        font-size:3.8rem;
+    }
+    
+    .section-header > .conjunto-2 h2{
+        font-size: 3.8rem;
+    }
+    
+    .section-header > .conjunto-2 div{
+        gap: 45px;
+        justify-content: center;
+    }
+    .section-header > .conjunto-2 > div img{
+        height: 34px;
+        width: 34px;
+    }
+
+    .portafolio > div{
+        display: flex;
+        padding: 0rem 2rem;
+        gap: 4%;
+        justify-content:center;
+    }
+    
+    .portafolio > div img{
+        max-width: 341px;
+        max-height: 225px;
+    }
+
+}
+
+@media screen and ( min-width: 1190px ) {
+    nav label{
+        display: none;
+    }
+
+    input#menu-hamburguesa ~ ul{
+        position: static;
+        background-color: transparent;
+        display:flex;
+        flex-direction: row;
+        height: auto;
+        justify-content: flex-end;
+    }
+
+    header ul a:hover{
+        color: rgb(128, 128, 128);
+        text-decoration: underline whitesmoke 1px;
+        cursor: pointer;
+    }
+    li:active{
+        color:#34B0BE;
+        text-decoration: underline rgb(20, 92, 92) 3px;
+    }
+    
+    nav{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        padding: 0.5rem 1.25rem;
+        height: 60px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 4;
+        background-color: var(--color-principal);
+        width: 100%;
+    }
+
+    .section-header > .conjunto-1{
+        position: absolute;
+        left: 10%;
+        z-index: 1;
+        top: 0;
+        margin-top:0;
+    }
+    
+    .section-header > .conjunto-2{
+        position: absolute;
+        right: 15%;
+        top: 0;
+        margin-top: 0;
+        
+    }
+
+    .section-header > .conjunto-3 {
+        top: 320px;
+        gap: 60px;
+        max-width: 600px;
+
+    }
+
+    .section-header > .conjunto-1 h1{
+        font-weight: 100;
+        font-size: 5rem;
+        border-bottom: solid white 2px;
+        width: 330px;
+    }
+    
+    .section-header > .conjunto-1 h2{
+        font-size: 6.5rem;
+        border-bottom: transparent 2px;
+        font-weight:900;
+    }
+    
+    .section-header > .conjunto-1 h3{
+        font-weight: 100;
+        font-size: 2.5rem;
+        width: 350px;
+        margin-top: 0;
+    }
+
+    .section-header > .conjunto-2{
+        width: 280px;
+    }
+
+    .section-header > .conjunto-2 h1{
+        font-size:3.4rem;
+    }
+    
+    .section-header > .conjunto-2 h2{
+        font-size: 3.5rem;
+    }
+    
+    .section-header > .conjunto-2 div{
+        gap: 45px;
+        justify-content: flex-start;
+    }
+    .section-header > .conjunto-2 > div img{
+        height: 34px;
+        width: 34px;
     }
 }
