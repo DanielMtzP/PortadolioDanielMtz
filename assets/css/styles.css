@@ -58,16 +58,17 @@ input#menu-hamburguesa:checked ~ ul{
     display: flex;
 }
 
-header ul a > li:hover{
-    color:var(--color-titulos);
+nav > ul > li > a{
     text-decoration: none;
     cursor: pointer;
+    color: var(--color-blanco);
 }
 
-li:active{
+nav > ul > li > a:hover{
     color:var(--color-titulos);
     text-decoration: none;
 }
+
 
 .section-header{
     display: flex;
@@ -602,8 +603,6 @@ progress::-moz-progress-bar {
         justify-content: flex-end;
     }
 
-    
-    
     nav{
         display: flex;
         justify-content: right;
@@ -618,16 +617,7 @@ progress::-moz-progress-bar {
         width: 100%;
     }
     
-    header ul a:hover{
-        color:var(--color-titulos);
-        text-decoration: none;
-        cursor: pointer;
-    }
     
-    li:active{
-        color:var(--color-titulos);
-        text-decoration: none;
-    }
     
     .section-header > .conjunto-1{
         position: absolute;
