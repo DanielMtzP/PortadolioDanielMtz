@@ -58,6 +58,17 @@ input#menu-hamburguesa:checked ~ ul{
     display: flex;
 }
 
+header ul a > li:hover{
+    color:var(--color-titulos);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li:active{
+    color:var(--color-titulos);
+    text-decoration: none;
+}
+
 .section-header{
     display: flex;
     justify-content: center;
